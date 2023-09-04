@@ -4,19 +4,139 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>index</title>
-    <script type="module" crossorigin src="/web-layout-training-vite/assets/main-2d761428.js"></script>
-    <link rel="stylesheet" href="/web-layout-training-vite/assets/main-4cfea7bd.css">
+    <title>2023_W7_Animation</title>
+    <!-- icon -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" /><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <script type="module" crossorigin src="/2023_W7_vite_animation/assets/main-053a393c.js"></script>
+    <link rel="stylesheet" href="/2023_W7_vite_animation/assets/main-f8eb0885.css">
   </head>
   <body>
-    <h1 class="header">我是 header</h1>
-<a href="index.html">index</a>
-<a href="about.html">about</a>
-<a href="contact.html">contact</a>
-    <h1 class="index-title">我是首頁</h1>
-    <img src="/web-layout-training-vite/assets/cat-0c0689ae.jpg" style="width: 300px;" alt="cat">
-
-    <footer class="footer">我是 footer</footer>
-    
+    <nav class="nav">
+    <ul class="menu container d-flex">
+        <li class="light-gary">WILLIAM LEE</li>
+        <li class="light-gary">BASED IN TAIWAN</li>
+        <li class="light-gary">CURRENTLY FRONT END ENGINEER AT HEXSCHOOL</li>
+        <li><a class="nav-link light-gary" href="#">CONTACT ME</a></li>
+    </ul>
+  </nav><!-- nav -->    <h1 class="test">test</h1>
+    <header class="header">
+      <div class="info container d-flex">
+          <img class="info-img mr-24" src="/2023_W7_vite_animation/assets/people-2c212e6d.png" alt="william-headshot">
+          <div class="info-details">
+              <p class="subtitle white">Hi</p>
+              <p class="subtitle white">I’m a front-end developer</p>
+              <h1 class="title primary-green">William</h1>
+              <a class="btn-sm-wh d-flex black" href="#">
+                      <span>Contact me</span>
+                      <span class="material-symbols-outlined">
+                      arrow_outward
+                      </span>
+              </a><!-- btn-sm-wh -->
+          </div><!-- info-details -->
+      </div><!-- info -->
+    </header>
+    <div class="introduction ptb-160">
+      <div class="intro-main container d-flex">
+          <div class="intro">
+              <h2 class="topic white mb-36">Introduction</h2>
+              <p class="details white mb-32">
+                  Hi, I'm William Lee, a Front-End Developer with a passion for building beautiful and responsive websites that provide an optimal user experience.
+              </p>
+              <ul class="sparkle-box d-flex">
+                  <li>
+                      <img src="data:image/png;base64,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" alt="sparkle-sm-img">
+                  </li>
+                  <li>
+                      <img src="data:image/png;base64,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" alt="sparkle-sm-img">
+                  </li>
+                  <li>
+                      <img src="data:image/png;base64,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" alt="small-sparkle">
+                  </li>
+              </ul> 
+          </div><!-- intro -->
+          <ul class="intro-gallery d-flex">
+              <li class="gallery-list">
+                  <a href="#"><img src="/2023_W7_vite_animation/assets/sparkle-lg-c7b7a4da.png" alt="large-sparkle"></a>
+              </li>
+              <li class="gallery-list">
+                  <a href="#"><img src="/2023_W7_vite_animation/assets/photographer-14faf024.png" alt="photographer"></a>
+              </li>
+              <li class="gallery-list">
+                  <a href="#"><img src="/2023_W7_vite_animation/assets/people-2-406ce82b.png" alt="people"></a>
+              </li>
+          </ul>
+      </div>
+    </div><!-- introduction -->
+    <div class="about container d-flex ptb-160">
+      <ul class="skill d-flex">
+          <li class="skill-list mb-24">
+              <p class="number mb-4">01</p>
+              <h3 class="category mb-4">Attention to Detail</h3>
+              <p>Meticulous code analysis and optimization.</p>
+          </li>
+          <li class="skill-list mb-24">
+              <p class="number mb-4">02</p>
+              <h3 class="category mb-4">Adaptability</h3>
+              <p>Swift learning of new technologies.</p>
+          </li>
+              <li class="skill-list">
+              <p class="number mb-4">03</p>
+              <h3 class="category mb-4">Problem Solver</h3>
+              <p>Identifying and resolving issues.</p>
+          </li>
+          <li class="skill-list">
+              <p class="number mb-4">04</p>
+              <h3 class="category mb-4">Team Player</h3>
+              <p>Collaborates and shares ideas.</p>
+          </li>
+      </ul>
+      <div class="about-details">
+          <h2 class="topic mb-36 black">About Me</h2>
+          <p class="details">With over 5 years of experience, I'm proficient in HTML, CSS, JavaScript, jQuery, and React. I have a strong understanding of user experience design and accessibility. I'm always learning new technologies and techniques to stay up-to-date in the field.</p>
+      </div>  
+    </div><!-- about -->
+    <div class="contact">
+      <div class="contact-main container d-flex">
+          <div class="contact-title d-flex">
+              <h2 class="topic white">Contact me</h2>
+              <span class="material-symbols-outlined is-100">
+                  trending_flat
+              </span>
+          </div>
+          <ul class="social d-flex">
+              <li class="social-item"><a href="#"><img src="/2023_W7_vite_animation/assets/discord-15b2168a.png" alt="discord"></a></li>
+              <li class="social-item"><a href="#"><img src="/2023_W7_vite_animation/assets/instagram-b61bda78.png" alt="instagram"></a></li>
+              <li class="social-item"><a href="#"><img src="/2023_W7_vite_animation/assets/message-f5ae2f56.png" alt="message"></a></li>
+          </ul>
+      </div>
+    </div><!-- contact -->
+    <div class="projects container ptb-160">
+          <h2 class="topic tr black mb-16">My Projects</h2>
+          <div class="projects-main d-flex">
+              <a href="#"><img class="work-gallery-img" src="/2023_W7_vite_animation/assets/work-19ae6899.png" alt="work"></a>
+              <div class="projects-info">
+                  <div class="work-card d-flex mb-28">
+                      <a href="#"><img class="work-gallery-img w-196" src="/2023_W7_vite_animation/assets/code-b4b9a873.png" alt="code"></a>
+                      <div class="work-info d-flex">
+                          <p>I've worked on a variety of websites, including e-commerce sites, blogs, and landing pages. I take pride in creating clean, efficient, and user-friendly code.
+                          </p>
+                          <a class="btn-sm-bk d-flex white" href="#">
+                              <span>Contact me</span>
+                              <span class="material-symbols-outlined">
+                              arrow_outward
+                              </span>
+                          </a><!-- btn-sm-bk -->
+                      </div>
+                  </div>
+                  <div class="work-gallery d-flex">
+                      <a class="work-gallery-img" href="#"><img src="/2023_W7_vite_animation/assets/phone-cdf2739a.png" alt="phone"></a>
+                      <a class="work-gallery-img" href="#"><img src="/2023_W7_vite_animation/assets/computer-a4dbeaf3.png" alt="computer"></a>
+                  </div>
+              </div><!-- projects-info -->
+          </div><!-- projects-main -->
+    </div><!-- projects -->
+    <footer class="footer">
+    <p class="white">all rights reserved @hexschool2023</p>
+</footer>    
   </body>
 </html>
