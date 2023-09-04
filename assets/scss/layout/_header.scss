@@ -1,4 +1,19 @@
-.header{
-  background: #69F0AE;
-  font-size: 64px;
+.nav{
+  padding-top: 40px;
+  background: #000;
+}
+
+.menu{
+  justify-content: space-between;
+  li{
+    max-width: 306px;
+  }
+}
+
+.nav-link{
+  text-align: right;
+  &:hover{
+    width: 100%; 
+    color: #00FFA3;
+  }
 }
