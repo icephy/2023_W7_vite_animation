@@ -15,18 +15,22 @@
   <body>
     <nav class="nav">
     <ul class="menu container d-flex">
-        <li class="light-gary">WILLIAM LEE</li>
-        <li class="light-gary">BASED IN TAIWAN</li>
-        <li class="light-gary">CURRENTLY FRONT END ENGINEER AT HEXSCHOOL</li>
-        <li><a class="nav-link light-gary" href="#">CONTACT ME</a></li>
+        <li class="light-gary" data-aos="fade-up"
+     data-aos-anchor-placement="top-center">WILLIAM LEE</li>
+        <li class="light-gary" data-aos="fade-up"
+     data-aos-anchor-placement="top-center">BASED IN TAIWAN</li>
+        <li class="light-gary" data-aos="fade-up"
+     data-aos-anchor-placement="top-center">CURRENTLY FRONT END ENGINEER AT HEXSCHOOL</li>
+        <li data-aos="fade-up"
+        data-aos-anchor-placement="top-center"><a class="nav-link light-gary" href="#">CONTACT ME</a></li>
     </ul>
   </nav><!-- nav -->    <header class="header">
       <div class="info container d-flex">
-          <img class="info-img mr-24" data-aos="fade-right"  src="/2023_W7_vite_animation/assets/people-2c212e6d.png" alt="william-headshot">
+          <img class="info-img mr-24" data-aos="fade-right" src="/2023_W7_vite_animation/assets/people-2c212e6d.png" alt="william-headshot">
           <div class="info-details">
-              <p class="subtitle white">Hi</p>
-              <p class="subtitle white">I’m a front-end developer</p>
-              <h1 class="title primary-green">William</h1>
+              <p class="subtitle white" data-aos="fade-down">Hi</p>
+              <p class="subtitle white" data-aos="fade-down">I’m a front-end developer</p>
+              <h1 class="title primary-green" data-aos="fade-down">William</h1>
               <a class="btn-sm-wh d-flex black" href="#">
                       <span>Contact me</span>
                       <span class="material-symbols-outlined">
@@ -38,7 +42,7 @@
     </header>
     <div class="introduction ptb-160">
       <div class="intro-main container d-flex">
-          <div class="intro">
+          <div class="intro" data-aos="zoom-in-right">
               <h2 class="topic white mb-36">Introduction</h2>
               <p class="details white mb-32">
                   Hi, I'm William Lee, a Front-End Developer with a passion for building beautiful and responsive websites that provide an optimal user experience.
@@ -55,7 +59,7 @@
                   </li>
               </ul> 
           </div><!-- intro -->
-          <ul class="intro-gallery d-flex">
+          <ul class="intro-gallery d-flex" data-aos="zoom-in-left">
               <li class="gallery-list">
                   <a href="#"><img src="/2023_W7_vite_animation/assets/sparkle-lg-c7b7a4da.png" alt="large-sparkle"></a>
               </li>
@@ -70,34 +74,34 @@
     </div><!-- introduction -->
     <div class="about container d-flex ptb-160">
       <ul class="skill d-flex">
-          <li class="skill-list mb-24">
+          <li class="skill-list mb-24" data-aos="fade-down">
               <p class="number mb-4">01</p>
               <h3 class="category mb-4">Attention to Detail</h3>
               <p>Meticulous code analysis and optimization.</p>
           </li>
-          <li class="skill-list mb-24">
+          <li class="skill-list mb-24" data-aos="fade-down">
               <p class="number mb-4">02</p>
               <h3 class="category mb-4">Adaptability</h3>
               <p>Swift learning of new technologies.</p>
           </li>
-              <li class="skill-list">
+          <li class="skill-list" data-aos="fade-up">
               <p class="number mb-4">03</p>
               <h3 class="category mb-4">Problem Solver</h3>
               <p>Identifying and resolving issues.</p>
           </li>
-          <li class="skill-list">
+          <li class="skill-list" data-aos="fade-up">
               <p class="number mb-4">04</p>
               <h3 class="category mb-4">Team Player</h3>
               <p>Collaborates and shares ideas.</p>
           </li>
       </ul>
-      <div class="about-details">
+      <div class="about-details" data-aos="fade-left">
           <h2 class="topic mb-36 black">About Me</h2>
           <p class="details">With over 5 years of experience, I'm proficient in HTML, CSS, JavaScript, jQuery, and React. I have a strong understanding of user experience design and accessibility. I'm always learning new technologies and techniques to stay up-to-date in the field.</p>
       </div>  
     </div><!-- about -->
     <div class="contact">
-      <div class="contact-main container d-flex">
+      <div class="contact-main container d-flex" data-aos="fade-up">
           <div class="contact-title d-flex">
               <h2 class="topic white">Contact me</h2>
               <span class="material-symbols-outlined is-100">
@@ -112,8 +116,8 @@
       </div>
     </div><!-- contact -->
     <div class="projects container ptb-160">
-          <h2 class="topic tr black mb-16">My Projects</h2>
-          <div class="projects-main d-flex">
+          <h2 class="topic tr black mb-16" data-aos="fade-down">My Projects</h2>
+          <div class="projects-main d-flex" data-aos="fade-up">
               <a href="#"><img class="work-gallery-img" src="/2023_W7_vite_animation/assets/work-19ae6899.png" alt="work"></a>
               <div class="projects-info">
                   <div class="work-card d-flex mb-28">
@@ -154,7 +158,7 @@
             
 
             // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
-            offset: 120, // offset (in px) from the original trigger point
+            offset: 100, // offset (in px) from the original trigger point
             delay: 100, // values from 0 to 3000, with step 50ms
             duration: 800, // values from 0 to 3000, with step 50ms
             easing: 'ease', // default easing for AOS animations
