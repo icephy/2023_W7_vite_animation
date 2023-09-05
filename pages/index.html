@@ -9,6 +9,10 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" /><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <!-- AOS -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- Animate.css -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
   </head>
   <body>
     <%- include('./layout/header'); -%>
@@ -18,8 +22,8 @@
           <div class="info-details">
               <p class="subtitle white" data-aos="fade-down">Hi</p>
               <p class="subtitle white" data-aos="fade-down">I’m a front-end developer</p>
-              <h1 class="title primary-green" data-aos="fade-down">William</h1>
-              <a class="btn-sm-wh d-flex black" href="#">
+              <h1 class="title primary-green animate__animated animate__zoomIn animate__slow" data-aos="fade-down">William</h1>
+              <a class="btn-sm-wh d-flex black animate__animated animate__pulse animate__infinite" href="#">
                       <span>Contact me</span>
                       <span class="material-symbols-outlined">
                       arrow_outward
@@ -89,14 +93,14 @@
       </div>  
     </div><!-- about -->
     <div class="contact">
-      <div class="contact-main container d-flex" data-aos="fade-up">
-          <div class="contact-title d-flex">
+      <div class="contact-main container d-flex">
+          <div class="contact-title d-flex" data-aos="fade-right">
               <h2 class="topic white">Contact me</h2>
               <span class="material-symbols-outlined is-100">
                   trending_flat
               </span>
           </div>
-          <ul class="social d-flex">
+          <ul class="social d-flex animate__animated animate__pulse animate__infinite">
               <li class="social-item"><a href="#"><img src="../assets/images/discord.png" alt="discord"></a></li>
               <li class="social-item"><a href="#"><img src="../assets/images/instagram.png" alt="instagram"></a></li>
               <li class="social-item"><a href="#"><img src="../assets/images/message.png" alt="message"></a></li>
@@ -105,15 +109,15 @@
     </div><!-- contact -->
     <div class="projects container ptb-160">
           <h2 class="topic tr black mb-16" data-aos="fade-down">My Projects</h2>
-          <div class="projects-main d-flex" data-aos="fade-up">
-              <a href="#"><img class="work-gallery-img" src="../assets/images/work.png" alt="work"></a>
+          <div class="projects-main d-flex">
+              <a href="#" data-aos="fade-up"><img class="work-gallery-img" src="../assets/images/work.png" alt="work"></a>
               <div class="projects-info">
                   <div class="work-card d-flex mb-28">
-                      <a href="#"><img class="work-gallery-img w-196" src="../assets/images/code.png" alt="code"></a>
+                      <a href="#" data-aos="fade-up"><img class="work-gallery-img w-196" src="../assets/images/code.png" alt="code"></a>
                       <div class="work-info d-flex">
-                          <p>I've worked on a variety of websites, including e-commerce sites, blogs, and landing pages. I take pride in creating clean, efficient, and user-friendly code.
+                          <p data-aos="fade-up">I've worked on a variety of websites, including e-commerce sites, blogs, and landing pages. I take pride in creating clean, efficient, and user-friendly code.
                           </p>
-                          <a class="btn-sm-bk d-flex white" href="#">
+                          <a class="btn-sm-bk d-flex white animate__animated animate__pulse animate__infinite" href="#">
                               <span>Contact me</span>
                               <span class="material-symbols-outlined">
                               arrow_outward
@@ -121,7 +125,7 @@
                           </a><!-- btn-sm-bk -->
                       </div>
                   </div>
-                  <div class="work-gallery d-flex">
+                  <div class="work-gallery d-flex" data-aos="fade-up">
                       <a class="work-gallery-img" href="#"><img src="../assets/images/phone.png" alt="phone"></a>
                       <a class="work-gallery-img" href="#"><img src="../assets/images/computer.png" alt="computer"></a>
                   </div>
